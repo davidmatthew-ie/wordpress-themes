@@ -1,3 +1,8 @@
+/*
+  Load jQuery in compatibility mode, and handle the 
+  smooth scrolling and main logo animation
+*/
+
 jQuery(document).ready(function($) {
 	
 	// Change the navbar colour once you hit the trigger element
@@ -29,9 +34,3 @@ jQuery(document).ready(function($) {
   });
 	
 });
-
-
-  
-
-
-
