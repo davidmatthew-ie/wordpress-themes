@@ -4,8 +4,8 @@
 */
 
 jQuery(document).ready(function($) {
-	
-	// Change the navbar colour once you hit the trigger element
+  
+  // Change the navbar colour once you hit the trigger element
   var triggerElement = $('#heronswood-logo');
   var startPos = 0;
   if (triggerElement.length) {
@@ -22,9 +22,11 @@ jQuery(document).ready(function($) {
     if (this.hash !== '') {
       event.preventDefault();
       var hash = this.hash;
-      $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function() {
-        window.location.hash = hash;
-      });
+      $('html, body').animate(
+        { scrollTop: $(hash).offset().top }, 
+        800, 
+        function() { window.location.hash = hash; }
+      );
     }
   });
   
