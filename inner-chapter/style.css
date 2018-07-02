@@ -1,0 +1,660 @@
+/*
+Theme Name: Inner Chapter
+Author: David Matthew
+Author URI: http://davidmatthew.ie
+Description: A theme designed and developed for Inner Chapter
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: inner-chapter
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+   
+CONTENTS
+1. Universal/Mobile-first Styles
+2. Media Queries
+3. Animations
+*/
+
+
+/* 1. Universal/Mobile-first Styles */
+
+body {
+  min-height: 100vh;
+  color: #1a1a1a;
+}
+
+.navbar, .navbar-brand, h1, h2, h3, h4, h5, h6, #copyright, #credit {
+  font-family: 'Bellefair', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+a { color: #b1293f; }
+
+.navbar {
+  /*position: relative;*/
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.navbar, .navbar-brand { font-size: 18px }
+
+.caret {
+  margin: 0 0 5px 5px;
+}
+
+.main-content, .content-area { 
+  min-height: 82vh;
+  margin-bottom: 100px;
+}
+
+#ic-brand-icon {
+  display: inline-block;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+#main-heading-container {
+  margin: 0 auto;
+  border-left: 2px solid #b1293f;
+  border-right: 2px solid #b1293f;
+}
+
+#main-heading-container h1 { text-transform: uppercase }
+
+.icon-underline {
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 2px;
+  background: #b1293f;
+}
+
+.icon-text { 
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+#record-label-icon {
+  animation: rotation 3s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+#pos1 { transform: scale(-1, 1); -webkit-transform: scale(-1, 1) }
+#pos2 { transform: scale(-1, -1); -webkit-transform: scale(-1, -1) }
+#pos3 { transform: scale(1, -1); -webkit-transform: scale(1, -1) }
+#pos4 { transform: scale(1, 1); -webkit-transform: scale(1, 1) }
+
+#sd-icon-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+#sd-knob {
+  position: absolute;
+  animation: knob-turn 6s infinite linear;
+  -webkit-animation: knob-turn 6s infinite linear;
+}
+
+#ic-brand-text { display: none }
+
+.inset-shadow { box-shadow: 0 0 30px rgba(0,0,0,0.3) inset }
+
+#ic-logo {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  height: 225px;
+}
+
+#main-heading-container {
+  width: 94%;
+  height: 27px;
+}
+
+#main-heading-container h1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+#ic-logo { visibility: hidden }
+
+#main-icons-container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.main-icons { padding: 0 }
+
+.main-icons a { 
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.icon-underline { width: 60px }
+
+#record-label-icon { height: 37px }
+
+#music-production-icon, #pos1, #pos2, #pos3, #pos4 { height: 37px }
+
+#sd-icon-container {
+  height: 37px;
+  width: 47px;
+  padding: 0;
+}
+
+#sd-dial { width: 47px }
+
+#sd-knob {
+  top: 8px;
+  left: 8px;
+  width: 30px;
+}
+
+footer {
+  position: relative;
+  border-top: 1px solid #e7e7e7;
+  width: 100%;
+  min-height: 20vh;
+  background: #fff;
+}
+
+#footer-btn {
+  position: relative;
+  background: #fff;
+  width: 74px;
+  height: 74px;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -37px;
+  margin-bottom: 100px;
+}
+
+#footer-btn .fa {
+  font-size: 30px;
+  padding: 20px 0 0 0;
+}
+
+footer .fa { 
+  color: #1a1a1a;
+  font-size: 28px;
+  transition-duration: 0.2s;
+  margin: 0 14px 18px 14px;
+}
+
+footer .fa:hover, #footer-btn .fa:hover {
+  color: #b1293f;
+}
+
+.footer-underline {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  height: 2px;
+  max-width: 367px;
+  width: 90%;
+  background: #b1293f;
+}
+
+#copyright {
+  font-size: 13px;
+  margin-left: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+}
+
+#credit {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #1a1a1a;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.entry-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 43px;
+}
+
+.entry-content {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.widget-area {
+  display: none;
+  margin-top: 100px;
+}
+
+#studio-image {
+  width: 100%; 
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+.artist-page-img {
+  float: right; 
+  margin: 0 0 20px 20px;
+}
+
+.artist-divider {
+  margin-bottom: 40px;
+}
+
+.envira-gallery-item img {
+  padding: 2px !important;
+}
+
+.item-link:hover {
+  text-decoration: none;
+}
+
+.item-container {
+  padding: 10px; 
+  margin: 0 0 20px 0;
+  min-height: 400px;
+}
+
+.item-img-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+}
+
+.item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s ease;
+  padding: 10px;
+}
+
+.item-img-container:hover .item-img {
+  transform: scale(1.1);
+}
+
+.item-heading {
+  margin: 10px 0 2px 0;
+  font-size: 20px; 
+  color: #b1293f;
+}
+
+.item-date {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+}
+
+.blog-date {
+  font-size: 14px;
+  margin: 0 0 25px 0;
+}
+
+.blog-date, .item-date {
+  color: #666;
+}
+
+.youtube-embed {
+  width: 100%;
+  max-width: 560px;
+  min-height: 315px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* .custom-soundcloud {
+  width: 100%;
+  height: 117px;
+  margin-bottom: 20px;
+}
+
+.soundHeader__rightRow {
+  display: none !important;
+} */
+
+.custom-audio-player {
+  width: 100%;
+}
+
+
+/* 2. Media Queries */
+
+@media only screen and (min-width : 375px) {
+  #ic-logo {
+    height: 250px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  #main-heading-container {
+    width: 300px;
+    height: 29px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 29px;
+  }
+
+  #main-icons-container { padding-top: 30px }
+
+  #record-label-icon,
+  #music-production-icon,
+  #pos1, #pos2, #pos3, #pos4 {
+    height: 46px;
+  }
+
+  #sd-icon-container {
+    height: 46px;
+    width: 55px;
+  }
+
+  #sd-dial { width: 100% }
+
+  #sd-knob {
+    top: 10px;
+    left: 9px;
+    width: 37px;
+  }
+
+}
+
+@media only screen and (min-width : 410px) {
+  #ic-logo { height: 300px }
+
+  #main-heading-container {
+    width: 320px;
+    height: 31px;
+  }
+
+  #main-heading-container h1 { font-size: 31px }
+}
+
+@media only screen and (min-width : 768px) {
+  .inset-shadow { box-shadow: 0 0 60px rgba(0,0,0,0.3) inset }
+
+  #ic-logo {
+    height: 350px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+  }
+
+  #main-heading-container {
+    width: 370px;
+    height: 39px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 39px;
+  } 
+  
+  .navbar-right .dropdown-menu {
+    left: 110px;
+    right: auto;
+  }
+  
+  #studio-image {
+    width: 430px; 
+    float: right;
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+   
+  .entry-content p {
+    padding-right: 30px;
+  }
+  
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+  #ic-brand-text { display: inline }
+
+  .inset-shadow { box-shadow: 0 0 100px rgba(0,0,0,0.3) inset }
+
+  #ic-logo {
+    height: 360px;
+    margin-top: 120px;
+  }
+
+  #main-heading-container {
+    width: 420px;
+    height: 42px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 42px;
+  }
+
+  .main-icons {
+    padding: 40px 30px;
+  }
+
+  #sd-icon-container {
+    height: 45px;
+    width: 55px;
+    padding: 0;
+  }
+
+  #sd-knob {
+    top: 10px;
+    left: 9.5px;
+  }
+  
+  .widget-area {
+    display: block;
+  }
+  
+  .entry-content {
+    padding-left: 20px;
+  }
+
+}
+
+
+@media only screen and (min-width : 1450px) {
+
+  #ic-logo {
+    height: 380px;
+    margin-top: 150px;
+  }
+
+  #main-heading-container {
+    width: 420px;
+    height: 42px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 42px;
+  }
+}
+
+
+/* 3. Animations */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg) }
+    to   { transform: rotate(359deg) }
+}
+
+@keyframes knob-turn {
+  0%   { transform: rotate(226deg) }
+  10%  { transform: rotate(220deg) }
+  25%  { transform: rotate(390deg) }
+  35%  { transform: rotate(390deg) }
+  45%  { transform: rotate(300deg) }
+  52%  { transform: rotate(300deg) }
+  75%  { transform: rotate(360deg) }
+  85%  { transform: rotate(360deg) }
+  100% { transform: rotate(226deg) }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+

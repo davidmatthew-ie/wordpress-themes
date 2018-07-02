@@ -52,8 +52,8 @@ add_action( 'wp_enqueue_scripts', 'load_css' );
 
 function load_js() {
 	wp_deregister_script('jquery');
-    wp_register_script( 'jquery', includes_url('/js/jquery/jquery.js'), false, null, true);
-    wp_enqueue_script('jquery');
+  wp_register_script( 'jquery', includes_url('/js/jquery/jquery.js'), false, null, true);
+  wp_enqueue_script('jquery');
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/lib/js/bootstrap.min.js', array('jquery'), null, true);
 	wp_enqueue_script('home-animation', get_template_directory_uri() . '/js/custom.js', array(), null, true);
 	
