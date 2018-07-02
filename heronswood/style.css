@@ -1,226 +1,221 @@
 /*
-  Theme Name: Herons Wood
-  Theme URI: https://www.heronswood.ie/
-  Author: David Matthew
-  Author URI: https://www.davidmatthew.ie
-  Description: A custom theme for the Herons Wood Medical Centre in Cork.
-  Version: 1.0
+	Theme Name: Herons Wood
+	Theme URI: https://www.heronswood.ie/
+	Author: David Matthew
+	Author URI: https://www.davidmatthew.ie
+	Description: A custom theme for the Heronswood Medical Centre in Cork.
+	Version: 1.0
 */
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
 }
 
-a {
-  color: #fff !important;
-}
+a { color: #fff !important; }
 
-strong {
-  font-weight: 700;
-}
+strong { font-weight: 700; }
 
 .navbar {
-  background: none;
-  transition: all 1s;
+	background: none;
+	transition: all 1s;
 }
 
 .navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border: none;
+	border: none;
 }
 
 .navbar-collapse {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 .nav-link {
-  font-weight: 300;
-  color: #fff !important;
-  text-transform: uppercase;
-  font-size: 17px;
-  letter-spacing: 0.23em;
-  transition: background 0.5s;
+	font-weight: 300;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 0.23em;
+	transition: background 0.5s;
 }
 
 .nav-link li, 
 #home {
-  transition: background 0.5s;
+	transition: background 0.5s;
 }
 
 .nav-link li:hover,
 #home:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
+	background: rgba(255, 255, 255, 0.2) !important;
 }
 
 #banner {
-  height: 100vh;
+	height: 100vh;
 }
 
 .primary-bg {
-  position:relative;
-  z-index: 0;
-  background-image: url('/wp-content/themes/heronswood/img/banner-backdrop-1920x1440.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+	position:relative;
+	z-index: 0;
+	background-image: url('/wp-content/themes/heronswood/img/banner-backdrop-1920x1440.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .overlay {
-  position: relative;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
+	position: relative;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
 }
 
 #heronswood-logo {
-  visibility: hidden;
-  position: relative;
-  width: 90%;
-  top: 180px;
-  left: 50%;
-  margin-left: -45%;
+	visibility: hidden;
+	position: relative;
+	width: 90%;
+	top: 180px;
+	left: 50%;
+	margin-left: -45%;
 }
 
 .heading {
-  font-size: 28px;
-  margin-bottom: 40px;
+	font-size: 28px;
+	margin-bottom: 40px;
 }
 
 .icon-wrapper {
-  padding: 30px;
+	padding: 30px;
 }
 
 .icon {
-  display: block;
-  margin: auto;
-  width: 75%;
-  transition: all 0.8s;
+	display: block;
+	margin: auto;
+	width: 75%;
+	transition: all 0.8s;
 }
 
 .icon:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .text-padding {
-  padding: 20px 20px 40px 20px;
+	padding: 20px 20px 40px 20px;
 }
 
 .text-white {
-  color: #fff;
+	color: #fff;
 }
 
 .content-padding {
-  padding: 10px;
+	padding: 10px;
 }
 
 .beige-box {
-  background: #e9e8e3;
+	background: #e9e8e3;
 }
 
 .brown-border-box {
-  border: 2px solid #4d4d4d;
+	border: 2px solid #4d4d4d;
 }
 
 #footer {
-  height: 100px;
+	height: 100px;
 }
 
 #designed-by {
-  position: absolute;
-  top: 60px;
-  width: 94%;
-  left: 50%;
-  margin-left: -47%;
+	position: absolute;
+	top: 60px;
+	width: 94%;
+	left: 50%;
+	margin-left: -47%;
 }
 
 @media screen and (min-width: 450px) {
-  .icon {
-    width: 275px;
-  }
-  
-  #footer {
-    height: 120px;
-  }
-  
-  #designed-by {
-    top: 60px;
-    width: 420px;
-    left: 50%;
-    margin-left: -210px;
-  }
+	.icon {
+		width: 275px;
+	}
+	
+	#footer {
+		height: 120px;
+	}
+	
+	#designed-by {
+		top: 60px;
+		width: 420px;
+		left: 50%;
+		margin-left: -210px;
+	}
 }
 
 @media screen and (min-width: 600px) {
-  #heronswood-logo {
-    width: 540px;
-    top: 220px;
-    left: 50%;
-    margin-left: -270px;
-  }
+	#heronswood-logo {
+		width: 540px;
+		top: 220px;
+		left: 50%;
+		margin-left: -270px;
+	}
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 24px;
-  }
-  
-  .row {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  .text-padding {
-    padding: 40px 20px 40px 20px;
-  }
-  
-  .icon {
-    width: 205px;
-  }
-  
-  .heading {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
+	body {
+		font-size: 24px;
+	}
+	
+	.row {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	.text-padding {
+		padding: 40px 20px 40px 20px;
+	}
+	
+	.icon {
+		width: 205px;
+	}
+	
+	.heading {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	
 }
 
 @media screen and (min-width: 992px) {
-  #heronswood-logo {
-    width: 620px;
-    top: 260px;
-    left: 50%;
-    margin-left: -310px;
-  }
-  
-  .row {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
+	#heronswood-logo {
+		width: 620px;
+		top: 260px;
+		left: 50%;
+		margin-left: -310px;
+	}
+	
+	.row {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
 }
 
 @media screen and (min-width: 1920px) {
-  .primary-bg {
-    background-image: url('/wp-content/themes/heronswood/img/banner-backdrop-3840x2880.jpeg');
-  }
+	.primary-bg {
+		background-image: url('/wp-content/themes/heronswood/img/banner-backdrop-3840x2880.jpeg');
+	}
 }
 
-
 .logoIntro {
-  animation: logoIntro 2s;
+	animation: logoIntro 2s;
 }
 
 @keyframes logoIntro {
-  from { opacity: 0; transform: translate3d(0, -150%, 0); transform: scale(3); }
-  to { opacity: 1; transform: none; }
+	from { opacity: 0; transform: translate3d(0, -150%, 0); transform: scale(3); }
+	to { opacity: 1; transform: none; }
 }
 
 .navIntro {
-  animation: navIntro 2s;
+	animation: navIntro 2s;
 }
 
 @keyframes navIntro {
-  from { opacity: 0; transform: translate3d(0, 150%, 0); letter-spacing: 0.8em; }
-  to { opacity: 1; transform: none; letter-spacing: 0.23em; }
+	from { opacity: 0; transform: translate3d(0, 150%, 0); letter-spacing: 0.8em; }
+	to { opacity: 1; transform: none; letter-spacing: 0.23em; }
 }
