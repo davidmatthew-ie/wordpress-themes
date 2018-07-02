@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 79.374998 79.375002" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Heronswood Contact Icon</title>
+	<defs>
+		<linearGradient id="linearGradient4676" x1="259.04" x2="245.86" y1="164.18" y2="213.39" gradientTransform="matrix(1.8475 -3.792e-8 3.792e-8 1.8475 -200.91 -385.89)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4716"/>
+		<linearGradient id="linearGradient4716">
+			<stop stop-color="#fff" offset="0"/>
+			<stop stop-color="#fff" stop-opacity="0" offset="1"/>
+		</linearGradient>
+		<linearGradient id="linearGradient4718" x1="61.133" x2="159.06" y1="649.19" y2="675.43" gradientTransform="matrix(.88708 0 0 .88708 -44.364 -317.61)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient4716"/>
+	</defs>
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title>Heronswood Contact Icon</dc:title>
+				<dc:creator>
+					<cc:Agent>
+						<dc:title>David Matthew</dc:title>
+					</cc:Agent>
+				</dc:creator>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(286.77 -75.016)">
+		<path d="m-235.68 120.25-5.0236-2.582c-0.70162-0.36484-1.5716-0.16839-2.0768 0.44904l-1.8523 2.3574c-1.7962-0.98227-3.1433-1.8803-4.743-3.48-1.6839-1.6839-2.582-3.0591-3.5081-4.7991l2.3294-1.8242c0.61742-0.47711 0.81388-1.3471 0.44903-2.0768l-2.582-4.9955c-0.44904-0.87001-1.5716-1.1507-2.3855-0.61743l-3.1994 2.1329c-0.72969 0.50517-1.1507 1.3471-1.0945 2.2452 0.0561 0.89807 0.16839 2.0487 0.39291 2.8626 0.92614 3.5642 3.1713 7.2688 6.2865 10.384 3.1152 3.1152 6.8198 5.3604 10.384 6.2865 0.81388 0.19646 1.9365 0.30872 2.8626 0.39291 0.89808 0.0561 1.7681-0.36484 2.2452-1.1226l2.0768-3.2275c0.58936-0.84194 0.30871-1.9365-0.5613-2.3855z" fill="#fff" opacity=".4" stroke-width=".28065"/>
+		<circle transform="rotate(75)" cx="46.845" cy="268.35" r="39.105" fill="none" stroke="url(#linearGradient4718)" stroke-width="1.1475"/>
+		<circle transform="rotate(165)" cx="268.35" cy="-46.845" r="35.77" fill="none" stroke="url(#linearGradient4676)" stroke-width="1.1473"/>
+	</g>
+</svg>
