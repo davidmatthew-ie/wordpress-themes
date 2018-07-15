@@ -11,7 +11,7 @@ if (!function_exists('inner_chapter_setup')) :
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
 		register_nav_menus(array(
-        	'primary' => __('Primary Menu', 'mytheme')
+        'primary' => __('Primary Menu', 'mytheme')
     	));
 	}
 endif;
@@ -21,6 +21,11 @@ function inner_chapter_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'inner_chapter_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'inner_chapter_content_width', 0 );
+
+function inner_chapter_globals() {
+	$GLOBALS['cat_name'];
+}
+add_action( 'after_setup_theme', 'inner_chapter_globals' );
 
 function inner_chapter_widgets_init() {
 	register_sidebar(array(
@@ -64,3 +69,4 @@ function load_js() {
 add_action( 'wp_enqueue_scripts', 'load_js' );
 
 add_filter('show_admin_bar', '__return_false');
+
