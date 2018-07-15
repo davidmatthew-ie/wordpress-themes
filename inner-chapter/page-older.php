@@ -1,10 +1,10 @@
 <?php
 /**
- * Template Name: News Page
+ * Template Name: Older News/Releases
  * @package Inner_Chapter
  */
 
-$GLOBALS['cat_name'] = 'news';
+$GLOBALS['cat_name'] = 'older';
 
 get_header(); ?>
 
@@ -18,9 +18,6 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'blog' ); 
 				?>
 			</div>
-			<?php
-				get_template_part( 'template-parts/content', 'older' );
-			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
