@@ -12,4 +12,4 @@ A theme developed for the Cork record label Inner Chapter. My duties included pr
 A theme developed for a Cork medical centre. For this site I also designed the new logo, and did all the development work.
 
 #### William Long Art
-A theme developed for a Kildare-based artist. My duties included all development and design work. This site is integrated with the Wordpress plugins Foogallery and WPForms.
+A theme developed for a Kildare-based artist. My duties included all development and design work. This site is integrated with the Wordpress plugins Foogallery, WPForms and Advanced Custom Fields.
