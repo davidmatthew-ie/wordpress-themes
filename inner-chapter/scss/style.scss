@@ -1,0 +1,330 @@
+/*!
+Theme Name: Inner Chapter
+Author: David Matthew
+Author URI: http://davidmatthew.ie
+Description: A theme designed and developed for Inner Chapter
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: inner-chapter
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* Variables */
+
+$ic-black: #1a1a1a;
+$ic-red: #b1293f;
+$ic-grey: #e7e7e7;
+
+/* Universal/Mobile-first Styles */
+
+body {
+  min-height: 100vh;
+  color: $ic-black;
+}
+
+.navbar, .navbar-brand, h1, h2, h3, h4, h5, h6, #copyright, #credit {
+  font-family: 'Bellefair', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+a { color: $ic-red; }
+
+.navbar {
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.navbar, .navbar-brand { font-size: 18px }
+
+.caret {
+  margin: 0 0 5px 5px;
+}
+
+.main-content, .content-area { 
+  min-height: 82vh;
+  margin-bottom: 100px;
+}
+
+#ic-brand-icon {
+  display: inline-block;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+#main-heading-container {
+  margin: 0 auto;
+  border-left: 2px solid $ic-red;
+  border-right: 2px solid $ic-red;
+}
+
+#main-heading-container h1 { text-transform: uppercase }
+
+.icon-underline {
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 2px;
+  background: $ic-red;
+}
+
+.icon-text { 
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+#record-label-icon {
+  animation: rotation 3s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+#pos1 { transform: scale(-1, 1); -webkit-transform: scale(-1, 1) }
+#pos2 { transform: scale(-1, -1); -webkit-transform: scale(-1, -1) }
+#pos3 { transform: scale(1, -1); -webkit-transform: scale(1, -1) }
+#pos4 { transform: scale(1, 1); -webkit-transform: scale(1, 1) }
+
+#sd-icon-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+#sd-knob {
+  position: absolute;
+  animation: knob-turn 6s infinite linear;
+  -webkit-animation: knob-turn 6s infinite linear;
+}
+
+#ic-brand-text { display: none }
+
+.inset-shadow { box-shadow: 0 0 30px rgba(0,0,0,0.3) inset }
+
+#ic-logo {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  height: 225px;
+}
+
+#main-heading-container {
+  width: 94%;
+  height: 27px;
+}
+
+#main-heading-container h1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+#ic-logo { visibility: hidden }
+
+#main-icons-container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.main-icons { padding: 0 }
+
+.main-icons a { 
+  text-decoration: none;
+  color: $ic-black;
+}
+
+.icon-underline { width: 60px }
+
+#record-label-icon { height: 37px }
+
+#music-production-icon, #pos1, #pos2, #pos3, #pos4 { height: 37px }
+
+#sd-icon-container {
+  height: 37px;
+  width: 47px;
+  padding: 0;
+}
+
+#sd-dial { width: 47px }
+
+#sd-knob {
+  top: 8px;
+  left: 8px;
+  width: 30px;
+}
+
+footer {
+  position: relative;
+  border-top: 1px solid $ic-grey;
+  width: 100%;
+  min-height: 20vh;
+  background: #fff;
+}
+
+#footer-btn {
+  position: relative;
+  background: #fff;
+  width: 74px;
+  height: 74px;
+  border: 1px solid $ic-grey;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -37px;
+  margin-bottom: 100px;
+}
+
+#footer-btn .fa {
+  font-size: 30px;
+  padding: 20px 0 0 0;
+}
+
+footer .fa { 
+  color: $ic-black;
+  font-size: 28px;
+  transition-duration: 0.2s;
+  margin: 0 14px 18px 14px;
+}
+
+footer .fa:hover, #footer-btn .fa:hover {
+  color: $ic-red;
+}
+
+.footer-underline {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  height: 2px;
+  max-width: 367px;
+  width: 90%;
+  background: $ic-red;
+}
+
+#copyright {
+  font-size: 13px;
+  margin-left: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+}
+
+#credit {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: $ic-black;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.entry-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 43px;
+}
+
+.entry-content {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.widget-area {
+  display: none;
+  margin-top: 100px;
+}
+
+#studio-image {
+  width: 100%; 
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+.artist-page-img {
+  float: right; 
+  margin: 0 0 20px 20px;
+}
+
+.artist-divider {
+  margin-bottom: 40px;
+}
+
+.envira-gallery-item img {
+  padding: 2px !important;
+}
+
+.item-link:hover {
+  text-decoration: none;
+}
+
+.item-container {
+  margin: 0 0 20px 0;
+  min-height: 400px;
+}
+
+.item-img-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+}
+
+.item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s ease;
+  padding: 10px;
+}
+
+.item-img-container:hover .item-img {
+  transform: scale(1.1);
+}
+
+.item-heading {
+  margin: 10px 0 2px 0;
+  font-size: 20px; 
+  color: $ic-red;
+}
+
+.item-date {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+}
+
+.blog-date {
+  font-size: 14px;
+  margin: 0 0 25px 0;
+}
+
+.blog-date, .item-date {
+  color: #666;
+}
+
+.youtube-embed {
+  width: 100%;
+  max-width: 560px;
+  min-height: 315px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.custom-audio-player {
+  width: 100%;
+}
+
+
+/* Media Queries */
+
+@import 'media-queries';
+
+/* Animations */
+
+@import 'animations';

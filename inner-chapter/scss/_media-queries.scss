@@ -1,0 +1,189 @@
+@media only screen and (min-width : 375px) {
+  #ic-logo {
+    height: 250px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  #main-heading-container {
+    width: 300px;
+    height: 29px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 29px;
+  }
+
+  #main-icons-container { padding-top: 30px }
+
+  #record-label-icon,
+  #music-production-icon,
+  #pos1, #pos2, #pos3, #pos4 {
+    height: 46px;
+  }
+
+  #sd-icon-container {
+    height: 46px;
+    width: 55px;
+  }
+
+  #sd-dial { width: 100% }
+
+  #sd-knob {
+    top: 10px;
+    left: 9px;
+    width: 37px;
+  }
+
+}
+
+@media only screen and (min-width : 410px) {
+  #ic-logo { height: 300px }
+
+  #main-heading-container {
+    width: 320px;
+    height: 31px;
+  }
+
+  #main-heading-container h1 { font-size: 31px }
+}
+
+@media only screen and (min-width : 768px) {
+  .inset-shadow { box-shadow: 0 0 60px rgba(0,0,0,0.3) inset }
+
+  #ic-logo {
+    height: 350px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+  }
+
+  #main-heading-container {
+    width: 370px;
+    height: 39px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 39px;
+  } 
+  
+  .navbar-right .dropdown-menu {
+    left: 110px;
+    right: auto;
+  }
+
+  .item-container {
+    padding: 10px; 
+  }
+  
+  #studio-image {
+    width: 430px; 
+    float: right;
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+   
+  .entry-content p {
+    padding-right: 30px;
+  }
+  
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+  #ic-brand-text { display: inline }
+
+  .inset-shadow { box-shadow: 0 0 100px rgba(0,0,0,0.3) inset }
+
+  #ic-logo {
+    height: 360px;
+    margin-top: 120px;
+  }
+
+  #main-heading-container {
+    width: 420px;
+    height: 42px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 42px;
+  }
+
+  .main-icons {
+    padding: 40px 30px;
+  }
+
+  #sd-icon-container {
+    height: 45px;
+    width: 55px;
+    padding: 0;
+  }
+
+  #sd-knob {
+    top: 10px;
+    left: 9.5px;
+  }
+  
+  .widget-area {
+    display: block;
+  }
+  
+  .entry-content {
+    padding-left: 20px;
+  }
+
+}
+
+@media only screen and (min-width : 1450px) {
+
+  #ic-logo {
+    height: 380px;
+    margin-top: 150px;
+  }
+
+  #main-heading-container {
+    width: 420px;
+    height: 42px;
+  }
+
+  #main-heading-container h1 {
+    font-size: 42px;
+  }
+}
