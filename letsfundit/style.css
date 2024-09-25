@@ -1,0 +1,242 @@
+/*
+ Theme Name:   Let's Fund It
+ Theme URI:    https://letsfundit.ie
+ Description:  The theme for the Let's Fund It website, based on GeneratePress.
+ Author:       David Matthew
+ Author URI:   https://davidmatthew.ie
+ Template:     generatepress
+ Version:      1.0
+*/
+
+@font-face {
+  font-family: 'Berlin Sans Demi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/berlin-sans-demi.woff') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/quicksand-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/quicksand-bold.woff2') format('woff2');
+}
+
+:root {
+  --lfi-yellow: #eab308;
+  --lfi-yellow-d1: #ca8a04;
+  --lfi-green: #10b981;
+  --lfi-green-d1: #059669;
+  --lfi-blue: #0ea5e9;
+  --lfi-blue-d1: #0284c7;
+}
+
+body {
+  font-family: 'Quicksand', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+  font-weight: 500;
+  color: #555;
+}
+
+h1, h2 {
+  font-family: 'Berlin Sans Demi', Impact, 'Arial Narrow Bold', sans-serif;
+  color: #555;
+}
+
+.products h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+  font-weight: 700;
+}
+
+a, a:hover, a:focus, a:active {
+  color: var(--lfi-green);
+}
+
+a, a:hover, a:focus, a:active {
+  color: var(--lfi-green-d1);
+}
+
+.site-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.main-navigation a {
+  font-weight: 700;
+}
+
+.woocommerce-page .product a.button,
+.product a.add_to_cart_button,
+.wp-block-button a.add_to_cart_button,
+.product .cart button.single_add_to_cart_button,
+a.wp-block-button__link.button-lfi {
+  background-color: var(--lfi-green);
+  border: 0.15rem solid var(--lfi-green-d1);
+  border-radius: 0.25rem !important;
+  color: #fff;
+}
+
+.woocommerce-page .product a.button:hover,
+.product a.add_to_cart_button:hover,
+.product .cart button.single_add_to_cart_button:hover,
+a.wp-block-button__link.button-lfi:hover {
+  background-color: var(--lfi-green-d1);
+  color: #fff;
+}
+
+a.wp-block-button__link.button-lfi.button-blue {
+  background-color: var(--lfi-blue);
+  border-color: var(--lfi-blue-d1);
+}
+
+a.wp-block-button__link.button-lfi.button-blue:hover {
+  background-color: var(--lfi-blue-d1);
+}
+
+a.wp-block-button__link.button-lfi.button-yellow {
+  background-color: var(--lfi-yellow);
+  border-color: var(--lfi-yellow-d1);
+}
+
+a.wp-block-button__link.button-lfi.button-yellow:hover {
+  background-color: var(--lfi-yellow-d1);
+}
+
+.site-logo img {
+  width: 70px;
+  height: auto;
+}
+
+.site-branding {
+  display: none;
+}
+
+#home-cta {
+  text-align: center;
+  margin: 3.5rem auto;
+  color: #fff;
+}
+
+#home-cta h1 {
+  text-shadow: 1px 1px 3px #0009;
+  margin-bottom: 2rem;
+}
+
+#cta-img {
+  margin-bottom: 3.5rem;
+}
+
+.woocommerce-page .product img,
+.related.products img,
+.wc-block-grid__product-image img,
+.woocommerce-product-gallery .flex-viewport,
+.woocommerce-product-gallery .flex-control-thumbs img {
+  border: 1px solid #ddd;
+}
+
+.woocommerce .product .images .flex-control-thumbs li {
+  margin-top: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+
+.single-product .cart {
+  display:flex;
+}
+
+.woocommerce-page ul.products li.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 410px;
+}
+
+.woocommerce-page ul.products li.product a.button {
+  width: fit-content;
+}
+
+details.wp-block-details summary {
+  font-weight: 700;
+  color: var(--lfi-green);
+  font-size: var(--wp--preset--font-size--medium);
+}
+
+details.wp-block-details p {
+  margin: 1.5rem;
+}
+
+.padding-sm {
+  padding: 1.5rem;
+}
+
+.site-footer {
+  color: #fff;
+  background-image: url('/wp-content/themes/letsfundit/img/pattern-green.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.site-footer #footer-widgets,
+.site-footer .site-info {
+  background-color: transparent;
+  color: #fff !important;
+}
+
+.site-footer #footer-widgets .widget-title {
+  margin-top: 0.6rem;
+}
+
+.site-footer #footer-widgets a,
+.site-footer #footer-widgets .widget-title {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.site-footer #footer-widgets a {
+  font-weight: 700;
+}
+
+.site-footer #footer-widgets a:hover {
+  text-decoration: underline;
+}
+
+.site-footer #footer-widgets .fa-brands {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+@media (min-width: 496px) {
+  #home-cta h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 782px) {
+  #home-cta {
+    text-align: left;
+  }
+
+  #cta-img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-logo img {
+    width: 300px;
+  }
+
+  #home-cta h1 {
+    font-size: 58px;
+  }
+}
+
